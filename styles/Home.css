@@ -1,0 +1,39 @@
+.home-page {
+  padding: 20px;
+  background-color: #242526; /* Card-like background */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.home-page h2 {
+  color: #e4e6eb;
+  margin-bottom: 20px;
+}
+
+.home-page p {
+  color: #b0b3b8;
+  line-height: 1.6;
+}
+
+.home-page .card {
+  background-color: #3a3b3c; /* Inner card background */
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.home-page .card h3 {
+  color: #e4e6eb;
+  margin-top: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .home-page {
+    padding: 16px;
+    margin-top: 10px;
+  }
+}

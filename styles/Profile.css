@@ -1,0 +1,97 @@
+.profile-page {
+  padding: 20px;
+  background-color: #242526;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.profile-page h2 {
+  color: #e4e6eb;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: #3a3b3c;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 3px solid #2e89ff; /* Facebook blue border */
+}
+
+.profile-info h3 {
+  color: #e4e6eb;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.profile-info p {
+  color: #b0b3b8;
+  margin-bottom: 5px;
+}
+
+.profile-section {
+  background-color: #3a3b3c;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section h3 {
+  color: #e4e6eb;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.profile-section p, .profile-section ul {
+  color: #b0b3b8;
+  line-height: 1.6;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-list li {
+  background-color: #2e89ff; /* Facebook blue for skills */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-page {
+    padding: 15px;
+    margin-top: 10px;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-avatar {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,100 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #242526; /* Facebook header background */
+  padding: 10px 20px;
+  color: #e4e6eb;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left .logo img {
+  height: 40px; /* Adjust logo size */
+  margin-right: 10px;
+}
+
+.search-bar {
+  background-color: #3a3b3c; /* Facebook search bar background */
+  border: none;
+  border-radius: 20px;
+  padding: 8px 15px;
+  color: #e4e6eb;
+  font-size: 15px;
+  width: 200px;
+}
+
+.search-bar::placeholder {
+  color: #b0b3b8;
+}
+
+.header-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav li {
+  margin: 0 15px;
+}
+
+.header-nav a {
+  color: #e4e6eb;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+  color: #2e89ff; /* Facebook blue on hover */
+}
+
+.header-right .user-avatar img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .header-left {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .search-bar {
+    width: 80%;
+  }
+
+  .header-nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header-nav li {
+    margin: 5px 10px;
+  }
+
+  .header-right {
+    margin-top: 10px;
+  }
+}
